@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <!--====== Title ======-->
+    <title>Foodyneeds</title>
+
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png" />
+
+    <!--====== Magnific Popup CSS ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css" />
+
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css" />
+
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+
+
+
+
+    <style>
+        .card-img-box {
+            object-fit: cover;
+            width: 100%;
+            height: 250px;
+        }
+        
+        .show_firstpage {
+            display: block;
+        }
+        
+        .none_firstpage {
+            display: none;
+        }
+        
+        .show_secondpage {
+            display: block;
+        }
+        
+        .none_secondpage {
+            display: none;
+        }
+        
+        body {
+            background-color: rgb(191, 219, 219);
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!--====== NAVBAR TWO PART START ======-->
+
+    <section class="navbar-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="#"> Foodyneeds </a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo" aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+              </button>
+
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
+                            <div id="app" class="container">
+                                <ul class="navbar-nav m-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="#home">home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#menu">Menu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#about">About</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- navbar -->
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+    </section>
+
+    <!--====== NAVBAR TWO PART ENDS ======-->
+
+    <!--====== SLIDER PART START ======-->
+
+    <section id="home" class="slider_area">
+        <div id="carouselThree" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselThree" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselThree" data-slide-to="1"></li>
+                <li data-target="#carouselThree" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active itemA">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title">Foodyneeds</h1>
+                                    <p class="text">
+                                        All you need is here!
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row -->
+                    </div>
+                    <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-end">
+                        <div class="slider-image">
+
+                        </div>
+                        <!-- slider-imgae -->
+                    </div>
+                    <!-- slider-imgae box -->
+                </div>
+                <!-- carousel-item -->
+
+                <div class="carousel-item itemB">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title">Healthy and Tasty Food</h1>
+                                    <p class="text">
+                                        We blend with love
+                                    </p>
+                                    <ul class="slider-btn rounded-buttons">
+                                    </ul>
+                                </div>
+                                <!-- slider-content -->
+                            </div>
+                        </div>
+                        <!-- row -->
+                    </div>
+                    <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-end">
+
+                        <!-- slider-imgae -->
+                    </div>
+                    <!-- slider-imgae box -->
+                </div>
+                <!-- carousel-item -->
+
+                <div class="carousel-item itemC">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h1 class="title">Amazing menu with special price</h1>
+                                    <p class="text">
+                                        We always offer menu with special price every day.
+                                    </p>
+
+                                </div>
+                                <!-- slider-content -->
+                            </div>
+                        </div>
+                        <!-- row -->
+                    </div>
+                    <!-- container -->
+                    <div class="slider-image-box d-none d-lg-flex align-items-end">
+
+                        <!-- slider-imgae -->
+                    </div>
+                    <!-- slider-imgae box -->
+                </div>
+                <!-- carousel-item -->
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselThree" role="button" data-slide="prev">
+                <i class="lni lni-arrow-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#carouselThree" role="button" data-slide="next">
+                <i class="lni lni-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+
+
+
+    <!--====== SLIDER PART ENDS ======-->
+
+    <!--====== PRINICNG START ======-->
+
+    <section id="menu" class="pricing-area" style="  background-color: rgb(191, 219, 219);">
+
+
+
+        <div class="container">
+            <button v-on:click="newscall()" type="button" class="btn btn-primary my-2">Modern</button>
+            <button v-on:click="blogcall()" type="button" class="btn btn-warning">Traditional</button>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-25">
+                        <h3 class="title">Menu</h3>
+                        <p class="text">
+                            Here's our menu that you can order!
+                        </p>
+                    </div>
+                    <!-- section title -->
+                </div>
+            </div>
+            <!-- row -->
+            <div id="firstpage" :class="style_firstpage">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-7 col-sm-9" v-for="isi_menu in menu">
+                        <div class="card" style="width: 18rem;">
+                            <img v-bind:src="isi_menu.gambar" class="card-img-top card-img-box" alt="...">
+                            <div class="card-body">
+                                <h5 class="sub-title">{{isi_menu.nama}}</h5>
+                                <p class="month">{{isi_menu.detail}}</p>
+                                <div class="pricing-list">
+                                    <p>
+                                        {{ isi_menu.harga}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+            <div id="secondpage" :class="style_secondpage">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-7 col-sm-9" v-for="isi_traditional in traditional">
+                        <div class="card" style="width: 18rem;">
+                            <img v-bind:src="isi_traditional.gambar" class="card-img-top card-img-box" alt="...">
+                            <div class="card-body">
+                                <h5 class="sub-title">{{isi_traditional.nama}}</h5>
+                                <p class="month">{{isi_traditional.detail}}</p>
+                                <div class="pricing-list">
+                                    <p>
+                                        {{ isi_traditional.harga}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div><br><br>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- pricing style one -->
+        </div>
+        </div>
+        <!-- row -->
+        <!-- container -->
+    </section>
+
+    <!--====== PRINICNG ENDS ======-->
+
+    <!--====== ABOUT PART START ======-->
+
+    <section id="about" class="about-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="about-title">
+                        <h4 class="title">
+                            About Our Store
+                        </h4>
+                    </div>
+                    <div class="faq-content mt-45" v-for="isi_about in about">
+                        <!-- faq title -->
+                        <div class="about-accordion">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">{{isi_about.judul}}</a
+                      >
+                      <div
+                      id="collapseOne"
+                      class="collapse show"
+                      aria-labelledby="headingOne"
+                      data-parent="#accordionExample"
+                    >
+                      <div class="card-body">
+                        <p class="text">
+                         {{isi_about.isi}}
+                        </p>
+                      </div>
+                    </div>
+                    </div>
+
+                    
+                  </div>
+                  
+                 
+                  
+              <!-- faq accordion -->
+            </div>
+            <!-- faq content -->
+          </div>
+          <div class="col-lg-7">
+            <div class="about-image mt-50">
+             
+            </div>
+            <!-- faq image -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!--====== ABOUT PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+
+    <section class="footer-area footer-dark">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="footer-logo text-center">
+              <a class="mt-30" href="index.html"
+                ><img src="assets/images/logo.svg" alt="Logo"
+              /></a>
+                                    </div>
+                                    <!-- footer logo -->
+                                    <ul class="social text-center mt-60">
+                                        <li>
+                                            <a href="https://facebook.com/uideckHQ"><i class="lni lni-facebook-filled"></i
+                ></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/uideckHQ"><i class="lni lni-twitter-original"></i
+                ></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://instagram.com/uideckHQ"><i class="lni lni-instagram-original"></i
+                ></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="lni lni-linkedin-original"></i></a>
+                                        </li>
+                                    </ul>
+                                    <!-- social -->
+                                    <div class="footer-support text-center">
+                                        <span class="number">+8801234567890</span>
+                                        <span class="mail">foodyneeds.com</span>
+                                    </div>
+                                    <div class="copyright text-center mt-35">
+
+                                    </div>
+                                    <!--  copyright -->
+                                </div>
+                            </div>
+                            <!-- row -->
+                        </div>
+                        <!-- container -->
+    </section>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+    <!--====== PART START ======-->
+
+    <!--
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+
+    <script>
+        //pricing
+        var pric = new Vue({
+            el: '#menu',
+            data: {
+
+                menu: [],
+                traditional: [],
+                style_firstpage: 'show_firstpage',
+                style_secondpage: 'none_secondpage'
+
+
+            },
+            methods: {
+                newscall: function() {
+                    this.style_firstpage = 'show_firstpage';
+                    this.style_secondpage = 'none_secondpage';
+
+                    axios.get('http://localhost:5000/uts/ambilmenu').then(response => this.menu = response.data);
+                },
+                blogcall: function() {
+                    this.style_firstpage = 'none_firstpage';
+                    this.style_secondpage = 'show_secondpage';
+
+                    axios.get('http://localhost:5000/uts/ambiltraditional').then(response => this.traditional = response.data);
+                },
+                update_menu: function() {
+                    axios.get('http://localhost:5000/uts/ambilmenu').then(response => this.menu = response.data);
+                },
+                update_traditional: function() {
+                    axios.get('http://localhost:5000/uts/ambiltraditional').then(response => this.traditional = response.data);
+                }
+
+
+
+            },
+            mounted() {
+                axios.get('http://localhost:5000/uts/ambilmenu').then(response => this.menu = response.data);
+
+                this.update_menu();
+                this.timer = setInterval(this.update_menu, 1000);
+
+                axios.get('http://localhost:5000/uts/ambiltraditional').then(response => this.traditional = response.data);
+
+                this.update_traditional();
+                this.timer = setInterval(this.update_traditional, 1000);
+
+
+
+            }
+        })
+
+        //about
+        var bout = new Vue({
+            el: '#about',
+            data: {
+
+                about: [],
+
+
+            },
+            methods: {
+
+                update_about: function() {
+                    axios.get('http://localhost:5000/uts/ambilabout').then(response => this.about = response.data);
+                }
+
+
+
+            },
+            mounted() {
+                axios.get('http://localhost:5000/uts/ambilabout').then(response => this.about = response.data);
+
+                this.update_about();
+                this.timer = setInterval(this.update_about, 1000);
+
+            }
+        })
+    </script>
+    <!--====== PART ENDS ======-->
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Ajax Contact js ======-->
+    <script src="assets/js/ajax-contact.js"></script>
+
+    <!--====== Isotope js ======-->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
